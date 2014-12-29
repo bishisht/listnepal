@@ -1,0 +1,15 @@
+<%= bootstrap_form_for(@category) do |f| %>
+
+  <div class="name">    
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="description">    
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="submit">
+    <%= f.submit %>
+  </div>
+
+<% end %>

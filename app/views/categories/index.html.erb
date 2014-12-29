@@ -1,0 +1,11 @@
+<div class="page-header">
+   <h1>Categories
+      <small>All</small>
+   </h1>
+</div>
+
+<div class="list-group">
+  <% @categories.each do |category| %>
+  <a href="#" class="list-group-item"><%= category.name %></a>
+  <% end %>    
+</div>
