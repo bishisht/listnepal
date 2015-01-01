@@ -10,7 +10,15 @@
   <%= render partial: "layouts/navbar" %>
 <div class="container">
 <%= render partial: "layouts/flash_messages", flash: flash %> 
+  <h2>Welome <small>
+    <% if user_signed_in? %>
+      <%= current_user.email %>
+    <% else %>
+       Guest
+    <% end %>
+      </small></h2>
   <%= yield %>
+  
 </div>
 </body>
 </html>
