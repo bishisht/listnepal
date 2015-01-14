@@ -36,3 +36,4 @@ gem 'bootstrap_form'
 gem 'devise'
 
 gem 'pg'
+gem 'ajaxify_rails'
